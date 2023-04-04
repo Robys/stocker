@@ -1,0 +1,32 @@
+{
+  "name": "stocker",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^23.2.1",
+    "electron-store": "^8.1.0",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "string-similarity": "^4.0.4",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "watch": "webpack --config webpack.common.js --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "electron-reload": "^2.0.0-alpha.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
+  }
+}

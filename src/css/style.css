@@ -1,0 +1,76 @@
+body{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+  padding: 20px;
+}
+
+
+.list li{
+    display: inline-flex;
+    margin-left: 10px;
+}
+
+.table{
+    width:100%;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+.table tbody{
+  overflow: scroll;
+}
+
+.table tr{
+    padding: 5px;
+}
+
+th{
+  background-color: grey;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-options {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  
+  .dropdown-options button {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+  }
+  
+  .dropdown-options button:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius:5px;
+  }
+
+  .icon{
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+  }
