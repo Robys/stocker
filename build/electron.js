@@ -10,19 +10,14 @@ function createWindow() {
       height: 800,
       backgroundColor: "white",
       webPreferences:{
+        webSecurity: false,
         nodeIntegration:true,
         preload: path.join(__dirname,'preload.js')
       }
     })
-    win.loadFile('index.html');
-    //win.webContents.openDevTools({mode:'detach'})
+    
+    win.loadURL(path.join(__dirname,"index.html"));
 }
-
-
-
-require('electron-reload')(__dirname,{
-  electron:path.join(__dirname,'node_modules','.bin','electron')
-})
 
 let store = new Store()
 
@@ -42,17 +37,3 @@ ipcMain.handle('save_product', async (event,data) =>{
 })
 
 app.whenReady().then(createWindow)
-
-/**
- * 
- *   try{
-
-    let store = new Store()
-    
-    return store.get('userdata.products')
-
-  }
-  catch(error){
-    return error
-  }
- */
