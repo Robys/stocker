@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from "react";
 import AddProduct from "./components/AddProduct"
 import ProductsTable from "./components/ProductsTable";
+import ExportTable from './components/ExportTable'
 import { compareTwoStrings } from "string-similarity";
 
 import glass from './icons/glass.png'
@@ -52,6 +53,10 @@ export default function App (){
 
                 <li>
                 <img className="icon" src={reload} onClick={()=> window.location.reload()}/>
+                </li>
+
+                <li>
+                {data ? <ExportTable data={data}/> :""}
                 </li>
 
             </ul>
